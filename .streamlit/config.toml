@@ -1,0 +1,12 @@
+# Streamlit configuration
+[server]
+# Turn off the source-file watcher. On a deployed app there are no live
+# file edits to detect, and the watcher walks every imported module —
+# which makes the "transformers"/"torchvision" tracebacks flood the logs
+# on startup. Disabling it silences that noise and speeds up boot.
+fileWatcherType = "none"
+
+[client]
+# Don't show Python tracebacks to end users (staff); errors are handled
+# gracefully in the app instead.
+showErrorDetails = false
