@@ -1,0 +1,10 @@
+# Secrets — NEVER commit these
+.env
+.streamlit/secrets.toml
+
+# Generated / installed files (rebuilt automatically)
+vector_store/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
