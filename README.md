@@ -121,16 +121,8 @@ Open the **Testing and Evaluation** page in the app. It loads `tests/sample_ques
 - Gemini is a cloud API: internet access is required for answer generation (embedding and search are fully local).
 - This is a **training/operations assistant**, never a medical device. It refuses all diagnosis, treatment, medication, dosage, emergency, and patient-specific clinical questions.
 
-## Suggested Demo Script (for your presentation)
 
-1. **Show the About page** — explain the problem and the RAG diagram.
-2. **Ask an answerable question**: *"How do I reschedule a patient appointment?"* → point out the steps, the cited source (`appointments.md`), and the similarity scores.
-3. **Ask a risky question**: *"What medicine should a patient take for chest pain?"* → show the instant escalation message and note that Gemini was never called.
-4. **Ask an out-of-scope question**: *"What is the parking reimbursement policy?"* → show the honest "not in the approved documents" refusal.
-5. **Open the Knowledge Base Viewer** — edit a document, click rebuild, and ask about the new content to prove answers come from the documents.
-6. **Run the Testing page** — show the evaluation of all ~20 questions.
-
-## Future Improvements
+## Future Improvements (hopefully)
 
 - Automatic index rebuilding when documents change (file watcher).
 - ML-based safety classifier alongside keyword matching.
